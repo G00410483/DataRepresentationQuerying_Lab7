@@ -4,6 +4,7 @@ function BookItems(props) {
     return (
         <div className="App">
             {/*Return book item properties*/} 
+            {/*Bootstrap Card Style*/} 
             <Card style={{ width: '100rem' }}></Card>
             <Card.Title>{props.myBook.title}</Card.Title>
             {console.log(props.myBook.title)}

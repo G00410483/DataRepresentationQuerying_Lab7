@@ -1,4 +1,5 @@
 function Header() {
+    // Return message
     return (
         <div className="App">
             <h1>My header in another component</h1>

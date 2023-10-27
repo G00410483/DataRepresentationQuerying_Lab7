@@ -32,6 +32,7 @@ function Read() {
     return (
         <div className="App">
             <h3>Hello from Read component</h3>
+            {/*Display book info*/} 
             <Books myBooks={data}></Books>
         </div>
     );
