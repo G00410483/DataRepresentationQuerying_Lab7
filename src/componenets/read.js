@@ -10,7 +10,7 @@ function Read() {
     //  Synchronize a component with an external system
     useEffect(
         () => {
-            // Get json
+            // Send a GET request to the specified URL to retrieve JSON data
             axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
             .then(
                 // http Response
@@ -19,7 +19,7 @@ function Read() {
                     setData(response.data.books);
                 }
             )
-            // Catch the error
+            // Log any errors that occur during the API request
             .catch( (error)=>{
                 // Display the message
                 console.log(error);
@@ -28,7 +28,7 @@ function Read() {
         }, []
     );
 
-    // Return message
+     // Render the component
     return (
         <div className="App">
             <h3>Hello from Read component</h3>
