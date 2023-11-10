@@ -10,13 +10,14 @@ function Read() {
     //  Synchronize a component with an external system
     useEffect(
         () => {
+
             // Send a GET request to the specified URL to retrieve JSON data
-            axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
+            axios.get('http://localhost:4000/api/books')
             .then(
                 // http Response
                 (response)=>{
                     // Update data
-                    setData(response.data.books);
+                    setData(response.data.davids_books);
                 }
             )
             // Log any errors that occur during the API request
