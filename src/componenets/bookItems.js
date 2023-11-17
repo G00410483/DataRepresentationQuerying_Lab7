@@ -3,13 +3,12 @@ function BookItems(props) {
     //Return value
     return (
         <div className="App">
-            {/*Return book item properties*/} 
-            {/*Bootstrap Card Style*/} 
+            {/*Return book item properties*/}
+            {/*Bootstrap Card Style*/}
             <Card style={{ width: '100rem' }}></Card>
             <Card.Title>{props.myBook.title}</Card.Title>
-            {console.log(props.myBook.title)}
-            <img src={props.myBook.thumbnailUrl}></img>
-            <p>{props.myBook.authors}</p>
+            <img src={props.myBook.cover}></img>
+            <p>{props.myBook.author}</p>
         </div>
     );
 }

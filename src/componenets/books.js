@@ -6,7 +6,7 @@ function Books(props) {
     return props.myBooks.map(
         (book)=>{
             // Return book info
-            return <BookItems myBook={book}></BookItems>
+            return <BookItems myBook={book} key={book._id}></BookItems>
         }
     );
 }

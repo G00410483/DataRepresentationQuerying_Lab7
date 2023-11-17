@@ -17,7 +17,7 @@ function Read() {
                 // http Response
                 (response)=>{
                     // Update data
-                    setData(response.data.davids_books);
+                    setData(response.data);
                 }
             )
             // Log any errors that occur during the API request
